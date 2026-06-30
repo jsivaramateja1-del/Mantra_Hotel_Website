@@ -1,0 +1,69 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Royal Haven Hotel night exterior illustration">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0B1A2E"/>
+<stop offset="55%" stop-color="#1A2C45"/>
+<stop offset="100%" stop-color="#2E3F5C"/>
+</linearGradient>
+<linearGradient id="bldg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#23170C"/>
+<stop offset="100%" stop-color="#170F07"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="700" fill="url(#sky)"/>
+<circle cx="980" cy="120" r="46" fill="#F2EAD6" opacity="0.92"/>
+<circle cx="200" cy="90" r="2" fill="#FFFFFF" opacity="0.7"/>
+<circle cx="320" cy="60" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+<circle cx="500" cy="140" r="2" fill="#FFFFFF" opacity="0.7"/>
+<circle cx="700" cy="70" r="1.5" fill="#FFFFFF" opacity="0.5"/>
+<circle cx="850" cy="200" r="1.5" fill="#FFFFFF" opacity="0.5"/>
+<circle cx="120" cy="220" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+<rect x="430" y="160" width="340" height="540" fill="url(#bldg)"/>
+<rect x="430" y="160" width="340" height="540" fill="none" stroke="#C9A84C" stroke-width="2"/>
+<g fill="#E8D08A">
+<rect x="460" y="200" width="50" height="40" rx="2"/>
+<rect x="530" y="200" width="50" height="40" rx="2"/>
+<rect x="600" y="200" width="50" height="40" rx="2"/>
+<rect x="670" y="200" width="50" height="40" rx="2"/>
+<rect x="460" y="260" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="530" y="260" width="50" height="40" rx="2"/>
+<rect x="600" y="260" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="670" y="260" width="50" height="40" rx="2"/>
+<rect x="460" y="320" width="50" height="40" rx="2"/>
+<rect x="530" y="320" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="600" y="320" width="50" height="40" rx="2"/>
+<rect x="670" y="320" width="50" height="40" rx="2"/>
+<rect x="460" y="380" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="530" y="380" width="50" height="40" rx="2"/>
+<rect x="600" y="380" width="50" height="40" rx="2"/>
+<rect x="670" y="380" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="460" y="440" width="50" height="40" rx="2"/>
+<rect x="530" y="440" width="50" height="40" rx="2"/>
+<rect x="600" y="440" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="670" y="440" width="50" height="40" rx="2"/>
+<rect x="460" y="500" width="50" height="40" rx="2"/>
+<rect x="530" y="500" width="50" height="40" rx="2" opacity="0.5"/>
+<rect x="600" y="500" width="50" height="40" rx="2"/>
+<rect x="670" y="500" width="50" height="40" rx="2"/>
+</g>
+<rect x="560" y="600" width="140" height="100" fill="#3D2B0A"/>
+<rect x="600" y="620" width="60" height="80" fill="#C9A84C"/>
+<text x="630" y="668" font-family="Georgia, serif" font-size="13" fill="#170F07" text-anchor="middle" font-weight="700">RH</text>
+<rect x="0" y="660" width="1200" height="40" fill="#0A0704"/>
+<rect x="150" y="400" width="200" height="300" fill="#1C130A"/>
+<rect x="850" y="350" width="220" height="350" fill="#1C130A"/>
+<g fill="#E8D08A" opacity="0.85">
+<rect x="180" y="430" width="30" height="26"/>
+<rect x="230" y="430" width="30" height="26"/>
+<rect x="280" y="430" width="30" height="26"/>
+<rect x="180" y="490" width="30" height="26" opacity="0.4"/>
+<rect x="230" y="490" width="30" height="26"/>
+<rect x="280" y="490" width="30" height="26"/>
+<rect x="880" y="390" width="30" height="26"/>
+<rect x="930" y="390" width="30" height="26" opacity="0.4"/>
+<rect x="980" y="390" width="30" height="26"/>
+<rect x="880" y="450" width="30" height="26"/>
+<rect x="930" y="450" width="30" height="26"/>
+<rect x="980" y="450" width="30" height="26" opacity="0.4"/>
+</g>
+</svg>

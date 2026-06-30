@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Royal Haven Hotel | Location &amp; Enquiries</title>
+  <meta name="description" content="Get in touch with Royal Haven Hotel for room enquiries, event bookings, feedback or general support. Find our address, phone number and email contact details.">
+  <meta name="keywords" content="contact hotel, hotel address, hotel phone number, Royal Haven Hotel contact, hotel enquiry">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .map-placeholder {
+      background: linear-gradient(135deg, var(--dark), var(--charcoal));
+      border-radius: var(--radius);
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      color: var(--gold-lt);
+      font-family: Arial, sans-serif;
+      font-size: 0.92rem;
+      border: 2px solid rgba(201,168,76,0.3);
+      margin-top: 24px;
+    }
+    .map-placeholder .map-icon { font-size: 3rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-name">Royal Haven</span>
+      <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We are here to help you plan the perfect stay</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-grid">
+
+        <!-- CONTACT FORM -->
+        <div class="form-box">
+          <h2>Send Us a Message</h2>
+          <p class="form-intro">Have a question or a special request? Fill in the form and our team will reply within 24 hours.</p>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name *</label>
+                <input type="text" id="cName" placeholder="Your full name" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="cEmail">Email Address *</label>
+                <input type="email" id="cEmail" placeholder="your@email.com" autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cSubject">Subject *</label>
+              <input type="text" id="cSubject" placeholder="e.g. Room enquiry, Event booking, Feedback">
+            </div>
+
+            <div class="form-group">
+              <label for="cMessage">Message *</label>
+              <textarea id="cMessage" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button class="btn btn-gold btn-full" type="submit">
+              Send Message
+            </button>
+            <div id="contactResult" class="form-result"></div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Our team is available 7 days a week to assist you with bookings, event planning, feedback and all enquiries.</p>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <h4>Address</h4>
+              <p>12 MG Road, City Centre<br>New Delhi – 110001, India</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <p>+91-9876543210<br>+91-1123456789</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉</div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>stay@royalhaven.com<br>events@royalhaven.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div class="info-text">
+              <h4>Office Hours</h4>
+              <p>Monday – Sunday: 8:00 AM – 8:00 PM<br>Front Desk: 24 Hours</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🚕</div>
+            <div class="info-text">
+              <h4>How to Reach Us</h4>
+              <p>5 min from Rajiv Chowk Metro Station<br>15 min from Indira Gandhi Airport</p>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder" aria-label="Map showing Royal Haven Hotel location at 12 MG Road, New Delhi">
+            <div class="map-icon">🗺️</div>
+            <strong class="map-name">Royal Haven Hotel</strong>
+            <span>12 MG Road, New Delhi – 110001</span>
+            <span class="map-note">(Map section — add Google Maps embed here)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-label">Our Departments</span>
+        <h2 class="section-title">Reach the Right Team</h2>
+      </div>
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="facility-icon">🛎️</div>
+          <h3>Front Desk</h3>
+          <p>Available 24/7 for check-in, check-out, room requests and immediate assistance.</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🎪</div>
+          <h3>Events Team</h3>
+          <p>For conferences, weddings and banquets. Email: events@royalhaven.com</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🧖</div>
+          <h3>Spa &amp; Wellness</h3>
+          <p>Book spa treatments in advance. Call our spa desk: +91-9876543211</p>
+        </div>
+        <div class="facility-card">
+          <div class="facility-icon">🍽️</div>
+          <h3>Restaurant</h3>
+          <p>Table reservations at Zaika Restaurant. Call: +91-9876543212</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-name">Royal Haven</span>
+        <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+      </div>
+      <p>A premier luxury hotel offering world-class comfort, fine dining and impeccable service. Your home away from home.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="rooms.html">Luxury Rooms</a></li>
+        <li><a href="facilities.html">Spa &amp; Wellness</a></li>
+        <li><a href="facilities.html">Fine Dining</a></li>
+        <li><a href="facilities.html">Conference Hall</a></li>
+        <li><a href="booking.html">Book a Room</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>📍 12 MG Road, City Centre<br>New Delhi – 110001<br><br>📞 +91-9876543210<br><br>✉ stay@royalhaven.com</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Royal Haven Hotel. Designed for MANTRA 2026 Summer School Assignment.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

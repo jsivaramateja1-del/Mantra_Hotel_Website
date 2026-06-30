@@ -1,0 +1,19 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twin room illustration with two single beds and garden view">
+<rect width="800" height="500" fill="#F2EAD6"/>
+<rect x="0" y="0" width="800" height="180" fill="#A9C6A0"/>
+<rect x="0" y="160" width="800" height="40" fill="#7FA876"/>
+<rect x="80" y="60" width="200" height="120" rx="4" fill="#3D2B0A"/>
+<rect x="100" y="80" width="160" height="80" rx="4" fill="#A9C6DE"/>
+<rect x="520" y="60" width="200" height="120" rx="4" fill="#3D2B0A"/>
+<rect x="540" y="80" width="160" height="80" rx="4" fill="#A9C6DE"/>
+<circle cx="220" cy="100" r="20" fill="#E8D08A"/>
+<circle cx="620" cy="100" r="20" fill="#E8D08A"/>
+<rect x="60" y="260" width="280" height="180" rx="8" fill="#FFFFFF" stroke="#C9A84C" stroke-width="2"/>
+<rect x="80" y="280" width="240" height="50" rx="6" fill="#E8D08A"/>
+<rect x="80" y="340" width="240" height="80" rx="6" fill="#C9A84C"/>
+<rect x="460" y="260" width="280" height="180" rx="8" fill="#FFFFFF" stroke="#C9A84C" stroke-width="2"/>
+<rect x="480" y="280" width="240" height="50" rx="6" fill="#E8D08A"/>
+<rect x="480" y="340" width="240" height="80" rx="6" fill="#C9A84C"/>
+<rect x="360" y="300" width="80" height="140" rx="4" fill="#3D2B0A"/>
+<rect x="375" y="320" width="50" height="60" rx="3" fill="#E8D08A"/>
+</svg>

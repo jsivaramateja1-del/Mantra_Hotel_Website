@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Room | Royal Haven Hotel</title>
+  <meta name="description" content="Book your luxury room at Royal Haven Hotel. Fill in the booking form with your details, preferred dates and room type for a confirmed reservation.">
+  <meta name="keywords" content="hotel room booking, book a hotel room, Royal Haven Hotel reservation, online hotel booking">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-name">Royal Haven</span>
+      <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Room Booking</h1>
+      <p>Reserve your stay at Royal Haven — best rates guaranteed when you book direct</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-grid">
+
+        <!-- BOOKING FORM -->
+        <div class="form-box">
+          <h2>Book Your Room</h2>
+          <p class="form-intro">Fill in your details below. All fields are required. We will confirm your booking within 24 hours.</p>
+
+          <form id="bookingForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bName">Full Name *</label>
+                <input type="text" id="bName" placeholder="e.g. Rahul Sharma" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="bPhone">Mobile Number *</label>
+                <input type="tel" id="bPhone" placeholder="10-digit number" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bEmail">Email Address *</label>
+              <input type="email" id="bEmail" placeholder="your@email.com" autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="bRoom">Room Type *</label>
+              <select id="bRoom">
+                <option value="">-- Select a Room --</option>
+                <option value="Deluxe Room">Deluxe Room – ₹4,999/night</option>
+                <option value="Twin Room">Twin Room – ₹5,499/night</option>
+                <option value="Premium Suite">Premium Suite – ₹8,499/night</option>
+                <option value="Business Suite">Business Suite – ₹9,999/night</option>
+                <option value="Family Suite">Family Suite – ₹11,999/night</option>
+                <option value="Royal Penthouse">Royal Penthouse – ₹16,999/night</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bCheckin">Check-in Date *</label>
+                <input type="date" id="bCheckin">
+              </div>
+              <div class="form-group">
+                <label for="bCheckout">Check-out Date *</label>
+                <input type="date" id="bCheckout">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bGuests">Number of Guests</label>
+                <select id="bGuests">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bSpecial">Special Requests</label>
+                <input type="text" id="bSpecial" placeholder="e.g. early check-in, flowers">
+              </div>
+            </div>
+
+            <button class="btn btn-gold btn-full-margin" type="submit">
+              Submit Booking Request
+            </button>
+            <div id="bookingResult" class="form-result"></div>
+          </form>
+        </div>
+
+        <!-- BOOKING INFO SIDEBAR -->
+        <div>
+          <div class="info-box mb-22">
+            <h3>📋 Booking Information</h3>
+            <ul>
+              <li>Check-in from 2:00 PM</li>
+              <li>Check-out by 12:00 PM (noon)</li>
+              <li>Breakfast included for 2 guests</li>
+              <li>Free cancellation up to 48 hrs</li>
+              <li>Confirmation sent within 24 hours</li>
+              <li>Payment collected at check-in</li>
+            </ul>
+          </div>
+
+          <div class="info-box mb-22">
+            <h3>🎁 Direct Booking Benefits</h3>
+            <ul>
+              <li>Best rate guaranteed</li>
+              <li>Free room upgrade (subject to availability)</li>
+              <li>Welcome drink on arrival</li>
+              <li>Complimentary late check-out (1 PM)</li>
+              <li>10% off at Zaika Restaurant</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <h3>📞 Need Help Booking?</h3>
+            <ul>
+              <li>📞 +91-9876543210</li>
+              <li>✉ stay@royalhaven.com</li>
+              <li>Available 24 hours a day</li>
+              <li>We speak English and Hindi</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-name">Royal Haven</span>
+        <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+      </div>
+      <p>A premier luxury hotel offering world-class comfort, fine dining and impeccable service. Your home away from home.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="rooms.html">Luxury Rooms</a></li>
+        <li><a href="facilities.html">Spa &amp; Wellness</a></li>
+        <li><a href="facilities.html">Fine Dining</a></li>
+        <li><a href="facilities.html">Conference Hall</a></li>
+        <li><a href="booking.html">Book a Room</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>📍 12 MG Road, City Centre<br>New Delhi – 110001<br><br>📞 +91-9876543210<br><br>✉ stay@royalhaven.com</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Royal Haven Hotel. Designed for MANTRA 2026 Summer School Assignment.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

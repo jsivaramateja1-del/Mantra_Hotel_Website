@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms &amp; Suites | Royal Haven Hotel</title>
+  <meta name="description" content="Explore Royal Haven Hotel's luxury rooms and suites. From Deluxe Rooms to the Royal Penthouse, each space is designed for comfort, elegance and a memorable stay.">
+  <meta name="keywords" content="hotel rooms, luxury suites, deluxe room, penthouse, room prices, hotel booking, Royal Haven rooms">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .calc-box {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 36px;
+      box-shadow: var(--shadow);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .calc-box h2 { margin-bottom: 22px; }
+    .calc-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+    @media(max-width:640px){ .calc-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-name">Royal Haven</span>
+      <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Rooms &amp; Suites</h1>
+      <p>Find the perfect room for your perfect stay</p>
+    </div>
+  </section>
+
+  <!-- ALL ROOMS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-label">Accommodation</span>
+        <h2 class="section-title">Our Room Categories</h2>
+        <p class="section-sub">All rooms include complimentary breakfast, free Wi-Fi, and 24-hour room service.</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card room-card">
+          <img class="card-img" src="images/deluxe-room.svg" alt="Deluxe Room with king bed and city view at Royal Haven Hotel">
+          <div class="card-body">
+            <h3>Deluxe Room</h3>
+            <div class="room-price">
+              <span class="price-amt">₹4,999</span>
+              <span class="price-unit">/ night</span>
+            </div>
+            <div class="room-features">
+              <span class="tag">King Bed</span>
+              <span class="tag">City View</span>
+              <span class="tag">330 sq ft</span>
+              <span class="tag">Free WiFi</span>
+              <span class="tag">AC</span>
+            </div>
+            <p>Our entry-level luxury room with a king-size bed, marble bathroom, flat-screen TV, work desk and a private balcony with city views.</p>
+            <a class="btn btn-gold" href="booking.html">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="card room-card">
+          <img class="card-img" src="images/premium-suite.svg" alt="Premium Suite with lounge area and bathtub at Royal Haven Hotel">
+          <div class="card-body">
+            <h3>Premium Suite</h3>
+            <div class="room-price">
+              <span class="price-amt">₹8,499</span>
+              <span class="price-unit">/ night</span>
+            </div>
+            <div class="room-features">
+              <span class="tag">King Bed</span>
+              <span class="tag">Living Room</span>
+              <span class="tag">600 sq ft</span>
+              <span class="tag">Bathtub</span>
+              <span class="tag">Mini Bar</span>
+            </div>
+            <p>A spacious suite featuring a separate lounge area, soaking bathtub, walk-in wardrobe, mini bar and access to our exclusive Executive Lounge.</p>
+            <a class="btn btn-gold" href="booking.html">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="card room-card">
+          <img class="card-img" src="images/penthouse.svg" alt="Royal Penthouse with private terrace and skyline view at Royal Haven Hotel">
+          <div class="card-body">
+            <h3>Royal Penthouse</h3>
+            <div class="room-price">
+              <span class="price-amt">₹16,999</span>
+              <span class="price-unit">/ night</span>
+            </div>
+            <div class="room-features">
+              <span class="tag">2 Bedrooms</span>
+              <span class="tag">Terrace</span>
+              <span class="tag">1800 sq ft</span>
+              <span class="tag">Butler</span>
+              <span class="tag">Jacuzzi</span>
+            </div>
+            <p>The crown of Royal Haven — a two-bedroom penthouse with a private rooftop terrace, personal butler, jacuzzi, dining room and 360° city views.</p>
+            <a class="btn btn-gold" href="booking.html">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="card room-card">
+          <img class="card-img" src="images/twin-room.svg" alt="Twin Room with two single beds and garden view at Royal Haven Hotel">
+          <div class="card-body">
+            <h3>Twin Room</h3>
+            <div class="room-price">
+              <span class="price-amt">₹5,499</span>
+              <span class="price-unit">/ night</span>
+            </div>
+            <div class="room-features">
+              <span class="tag">Twin Beds</span>
+              <span class="tag">Garden View</span>
+              <span class="tag">350 sq ft</span>
+              <span class="tag">Free WiFi</span>
+            </div>
+            <p>Ideal for friends or colleagues, our twin room features two plush single beds, garden view, spacious wardrobe and a well-lit work area.</p>
+            <a class="btn btn-gold" href="booking.html">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="card room-card">
+          <img class="card-img" src="images/family-suite.svg" alt="Family Suite with two rooms and kids play area at Royal Haven Hotel">
+          <div class="card-body">
+            <h3>Family Suite</h3>
+            <div class="room-price">
+              <span class="price-amt">₹11,999</span>
+              <span class="price-unit">/ night</span>
+            </div>
+            <div class="room-features">
+              <span class="tag">2 Rooms</span>
+              <span class="tag">Kids Area</span>
+              <span class="tag">900 sq ft</span>
+              <span class="tag">Kitchenette</span>
+            </div>
+            <p>Perfect for families, this two-room suite includes a dedicated kids' corner, kitchenette, extra sofa beds and child-proofed fittings for a safe comfortable stay.</p>
+            <a class="btn btn-gold" href="booking.html">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="card room-card">
+          <img class="card-img" src="images/business-suite.svg" alt="Business Suite with office desk and lounge at Royal Haven Hotel">
+          <div class="card-body">
+            <h3>Business Suite</h3>
+            <div class="room-price">
+              <span class="price-amt">₹9,999</span>
+              <span class="price-unit">/ night</span>
+            </div>
+            <div class="room-features">
+              <span class="tag">King Bed</span>
+              <span class="tag">Office Area</span>
+              <span class="tag">700 sq ft</span>
+              <span class="tag">Printer</span>
+              <span class="tag">Lounge</span>
+            </div>
+            <p>Designed for the modern business traveller, this suite features a fully-equipped office corner, high-speed internet, printer, and complimentary meeting-room access for 2 hours.</p>
+            <a class="btn btn-gold" href="booking.html">Book This Room</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COST CALCULATOR -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-label">Plan Your Budget</span>
+        <h2 class="section-title">Room Cost Calculator</h2>
+        <p class="section-sub">Estimate your total stay cost including taxes before you book.</p>
+      </div>
+      <div class="calc-box">
+        <div class="calc-row">
+          <div class="form-group">
+            <label for="calcRoom">Select Room</label>
+            <select id="calcRoom">
+              <option value="4999">Deluxe Room – ₹4,999</option>
+              <option value="5499">Twin Room – ₹5,499</option>
+              <option value="8499">Premium Suite – ₹8,499</option>
+              <option value="9999">Business Suite – ₹9,999</option>
+              <option value="11999">Family Suite – ₹11,999</option>
+              <option value="16999">Royal Penthouse – ₹16,999</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calcNights">Number of Nights</label>
+            <input type="number" id="calcNights" min="1" value="2" placeholder="e.g. 3">
+          </div>
+          <div class="form-group">
+            <label for="calcGuests">Number of Guests</label>
+            <input type="number" id="calcGuests" min="1" max="6" value="2" placeholder="e.g. 2">
+          </div>
+        </div>
+        <button class="btn btn-gold" onclick="calculateRoomCost()">Calculate Total Cost</button>
+        <div id="calcResult" class="form-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOM POLICIES -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Policies</span>
+          <h2 class="section-title">Room Policies</h2>
+          <p class="text-muted-ar mb-24">We want your stay to be as comfortable and transparent as possible. Please review our key policies before booking.</p>
+          <div class="info-box">
+            <h3>Check-in / Check-out</h3>
+            <ul>
+              <li>Check-in time: 2:00 PM onwards</li>
+              <li>Check-out time: 12:00 PM (noon)</li>
+              <li>Early check-in available on request</li>
+              <li>Late check-out charged at 50% of room rate</li>
+              <li>Valid photo ID required at check-in</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="info-box mt-62">
+            <h3>What's Included</h3>
+            <ul>
+              <li>Complimentary breakfast for 2 guests</li>
+              <li>Free high-speed WiFi in all areas</li>
+              <li>Daily housekeeping service</li>
+              <li>24-hour room service</li>
+              <li>Access to pool and fitness centre</li>
+              <li>Complimentary toiletries and amenities</li>
+            </ul>
+          </div>
+          <div class="info-box mt-20">
+            <h3>Cancellation Policy</h3>
+            <ul>
+              <li>Free cancellation up to 48 hours before check-in</li>
+              <li>50% refund for cancellations within 48 hours</li>
+              <li>No refund for no-show or same-day cancellation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-name">Royal Haven</span>
+        <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+      </div>
+      <p>A premier luxury hotel offering world-class comfort, fine dining and impeccable service. Your home away from home.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="rooms.html">Luxury Rooms</a></li>
+        <li><a href="facilities.html">Spa &amp; Wellness</a></li>
+        <li><a href="facilities.html">Fine Dining</a></li>
+        <li><a href="facilities.html">Conference Hall</a></li>
+        <li><a href="booking.html">Book a Room</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>📍 12 MG Road, City Centre<br>New Delhi – 110001<br><br>📞 +91-9876543210<br><br>✉ stay@royalhaven.com</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Royal Haven Hotel. Designed for MANTRA 2026 Summer School Assignment.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Gallery | Royal Haven Hotel</title>
+  <meta name="description" content="Browse Royal Haven Hotel's gallery — rooms, dining, spa, pool, banquet hall and more. Get a visual tour of our luxury property before you book.">
+  <meta name="keywords" content="hotel gallery, hotel photos, Royal Haven Hotel images, luxury hotel pictures, room photos">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-name">Royal Haven</span>
+      <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Hotel Gallery</h1>
+      <p>A visual journey through Royal Haven's spaces and experiences</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-label">Our Property</span>
+        <h2 class="section-title">Explore Every Corner</h2>
+        <p class="section-sub">Filter by category to see our rooms, dining, spa, pool and event spaces.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-cat="all" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" data-cat="rooms" onclick="filterGallery('rooms')">Rooms</button>
+        <button class="filter-btn" data-cat="dining" onclick="filterGallery('dining')">Dining</button>
+        <button class="filter-btn" data-cat="spa" onclick="filterGallery('spa')">Spa &amp; Pool</button>
+        <button class="filter-btn" data-cat="events" onclick="filterGallery('events')">Events</button>
+        <button class="filter-btn" data-cat="exterior" onclick="filterGallery('exterior')">Exterior</button>
+      </div>
+
+      <!-- Gallery Items -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-cat="rooms">
+          <div class="gal-img" alt="Deluxe Room at Royal Haven Hotel with king bed and city view">🛏️</div>
+          <div class="gal-caption">Deluxe Room — King Bed &amp; City View</div>
+        </div>
+
+        <div class="gallery-item" data-cat="rooms">
+          <div class="gal-img" alt="Premium Suite lounge area with elegant furnishings">🌅</div>
+          <div class="gal-caption">Premium Suite — Lounge Area</div>
+        </div>
+
+        <div class="gallery-item" data-cat="rooms">
+          <div class="gal-img" alt="Royal Penthouse terrace with panoramic city views">✨</div>
+          <div class="gal-caption">Royal Penthouse — Private Terrace</div>
+        </div>
+
+        <div class="gallery-item" data-cat="rooms">
+          <div class="gal-img" alt="Family Suite with cosy living room and children area">👨‍👩‍👧</div>
+          <div class="gal-caption">Family Suite — Living Room</div>
+        </div>
+
+        <div class="gallery-item" data-cat="dining">
+          <div class="gal-img" alt="Zaika fine dining restaurant with elegant table settings">🍽️</div>
+          <div class="gal-caption">Zaika Restaurant — Fine Dining</div>
+        </div>
+
+        <div class="gallery-item" data-cat="dining">
+          <div class="gal-img" alt="Lavish breakfast buffet spread at Royal Haven Hotel">🥐</div>
+          <div class="gal-caption">Morning Breakfast Buffet</div>
+        </div>
+
+        <div class="gallery-item" data-cat="dining">
+          <div class="gal-img" alt="Rooftop bar with cocktails and city skyline view at night">🍸</div>
+          <div class="gal-caption">Rooftop Bar — Skyline Views</div>
+        </div>
+
+        <div class="gallery-item" data-cat="dining">
+          <div class="gal-img" alt="Chef Rajan Pillai preparing signature dish in hotel kitchen">👨‍🍳</div>
+          <div class="gal-caption">Chef's Table — Signature Dishes</div>
+        </div>
+
+        <div class="gallery-item" data-cat="spa">
+          <div class="gal-img" alt="Luxury spa treatment room with soft lighting and aromatherapy">🧖</div>
+          <div class="gal-caption">Luxury Spa — Treatment Room</div>
+        </div>
+
+        <div class="gallery-item" data-cat="spa">
+          <div class="gal-img" alt="Outdoor swimming pool with sun loungers at Royal Haven Hotel">🏊</div>
+          <div class="gal-caption">Outdoor Pool — Sun Deck</div>
+        </div>
+
+        <div class="gallery-item" data-cat="spa">
+          <div class="gal-img" alt="Fitness centre with modern gym equipment at Royal Haven Hotel">🏋️</div>
+          <div class="gal-caption">Fitness Centre — 24-Hour Gym</div>
+        </div>
+
+        <div class="gallery-item" data-cat="spa">
+          <div class="gal-img" alt="Yoga studio with natural light and wooden flooring">🧘</div>
+          <div class="gal-caption">Yoga Studio — Wellness Zone</div>
+        </div>
+
+        <div class="gallery-item" data-cat="events">
+          <div class="gal-img" alt="Grand conference hall at Royal Haven Hotel with stage and seating">🎪</div>
+          <div class="gal-caption">Conference Hall — 300 Capacity</div>
+        </div>
+
+        <div class="gallery-item" data-cat="events">
+          <div class="gal-img" alt="Elegant wedding banquet setup at Royal Haven Hotel">💒</div>
+          <div class="gal-caption">Banquet Hall — Wedding Setup</div>
+        </div>
+
+        <div class="gallery-item" data-cat="events">
+          <div class="gal-img" alt="Corporate event setup with projector and round tables">💼</div>
+          <div class="gal-caption">Corporate Events — Business Setup</div>
+        </div>
+
+        <div class="gallery-item" data-cat="exterior">
+          <div class="gal-img" alt="Royal Haven Hotel exterior facade at night with golden lighting">🏨</div>
+          <div class="gal-caption">Hotel Exterior — Night View</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Liked What You Saw?</h2>
+      <p>Book your stay now and experience it in person.</p>
+      <a class="btn btn-gold" href="booking.html">Book a Room</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-name">Royal Haven</span>
+        <span class="logo-tag">Luxury Hotel &amp; Suites</span>
+      </div>
+      <p>A premier luxury hotel offering world-class comfort, fine dining and impeccable service. Your home away from home.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="rooms.html">Luxury Rooms</a></li>
+        <li><a href="facilities.html">Spa &amp; Wellness</a></li>
+        <li><a href="facilities.html">Fine Dining</a></li>
+        <li><a href="facilities.html">Conference Hall</a></li>
+        <li><a href="booking.html">Book a Room</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>📍 12 MG Road, City Centre<br>New Delhi – 110001<br><br>📞 +91-9876543210<br><br>✉ stay@royalhaven.com</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Royal Haven Hotel. Designed for MANTRA 2026 Summer School Assignment.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
