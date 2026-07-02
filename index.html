@@ -36,37 +36,39 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-particles"></div>
     <div class="container hero-content">
       <span class="hero-badge">★ Award Winning Hospitality Since 2005 ★</span>
-      <h1>Where Luxury Meets<br><span>Timeless Comfort</span></h1>
-      <p>Experience the finest rooms, world-class dining and personalized service in the heart of the city.</p>
+      <h1>Where Luxury Meets<br><span>Timeless Elegance</span></h1>
+      <p>Experience the finest rooms, world-class dining and personalised service in the heart of the city.</p>
       <div class="hero-btns">
-        <a class="btn btn-gold" href="booking.html">Book Your Stay</a>
+        <a class="btn btn-primary" href="booking.html">Book Your Stay</a>
         <a class="btn btn-outline" href="rooms.html">Explore Rooms</a>
       </div>
     </div>
+    <div class="hero-scroll">Scroll</div>
   </section>
 
   <!-- FEATURES STRIP -->
   <div class="features-strip">
     <div class="container">
       <div class="features-grid">
-        <div class="feature-item">
+        <div class="feature-item reveal">
           <div class="feature-icon">🏆</div>
           <h4>Award Winning</h4>
           <p>Best Luxury Hotel 2024</p>
         </div>
-        <div class="feature-item">
+        <div class="feature-item reveal">
           <div class="feature-icon">🛎️</div>
           <h4>24/7 Service</h4>
           <p>Round the clock support</p>
         </div>
-        <div class="feature-item">
+        <div class="feature-item reveal">
           <div class="feature-icon">🍽️</div>
           <h4>Fine Dining</h4>
           <p>5-star restaurant on site</p>
         </div>
-        <div class="feature-item">
+        <div class="feature-item reveal">
           <div class="feature-icon">🧘</div>
           <h4>Spa &amp; Wellness</h4>
           <p>Full luxury spa facility</p>
@@ -75,16 +77,80 @@
     </div>
   </div>
 
+  <!-- IMAGE SLIDER -->
+  <section class="slider-section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="section-label text-silver">Explore Our World</span>
+        <h2 class="section-title white-text">A Glimpse of Royal Haven</h2>
+      </div>
+      <div class="slider-wrapper reveal">
+        <div class="slider-track">
+          <div class="slide slide-bg-1">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="slide-label">Accommodation</p>
+              <h3>Royal Penthouse Suite</h3>
+              <p>Our crown jewel — a two-bedroom penthouse with private terrace, butler service and panoramic city views.</p>
+              <a class="btn btn-silver" href="rooms.html">View Rooms</a>
+            </div>
+            <div class="slide-bg slide-bg-icon">✨</div>
+          </div>
+          <div class="slide slide-bg-2">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="slide-label">Fine Dining</p>
+              <h3>Zaika Restaurant</h3>
+              <p>Award-winning cuisine blending Indian flavours with contemporary international artistry by Chef Rajan Pillai.</p>
+              <a class="btn btn-silver" href="facilities.html">Explore Dining</a>
+            </div>
+            <div class="slide-bg slide-bg-icon">🍽️</div>
+          </div>
+          <div class="slide slide-bg-3">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="slide-label">Wellness</p>
+              <h3>Luxury Spa &amp; Pool</h3>
+              <p>Rejuvenate your body and mind at our full-service spa with aromatherapy, massages and a temperature-controlled pool.</p>
+              <a class="btn btn-silver" href="facilities.html">Discover Spa</a>
+            </div>
+            <div class="slide-bg slide-bg-icon">🧖</div>
+          </div>
+          <div class="slide slide-bg-4">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <p class="slide-label">Events</p>
+              <h3>Grand Conference Hall</h3>
+              <p>Host up to 300 guests in our elegant banquet and conference hall, fully equipped with AV and catering services.</p>
+              <a class="btn btn-silver" href="facilities.html">Plan an Event</a>
+            </div>
+            <div class="slide-bg slide-bg-icon">🎪</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="sliderPrev" aria-label="Previous slide">&#8592;</button>
+        <div class="slider-dots">
+          <button class="slider-dot active" data-index="0" aria-label="Go to slide 1"></button>
+          <button class="slider-dot" data-index="1" aria-label="Go to slide 2"></button>
+          <button class="slider-dot" data-index="2" aria-label="Go to slide 3"></button>
+          <button class="slider-dot" data-index="3" aria-label="Go to slide 4"></button>
+        </div>
+        <button class="slider-btn" id="sliderNext" aria-label="Next slide">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURED ROOMS -->
   <section class="section">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="section-label">Our Rooms</span>
         <h2 class="section-title">Handcrafted for Comfort</h2>
         <p class="section-sub">Each room is designed with attention to every detail — from plush bedding to panoramic city views.</p>
       </div>
       <div class="cards-grid">
-        <article class="card room-card">
+        <article class="card room-card reveal">
           <img class="card-img" src="images/deluxe-room.svg" alt="Deluxe Room with king bed and city view at Royal Haven Hotel">
           <div class="card-body">
             <h3>Deluxe Room</h3>
@@ -99,7 +165,7 @@
             <a class="btn btn-dark" href="booking.html">Book Now</a>
           </div>
         </article>
-        <article class="card room-card">
+        <article class="card room-card reveal">
           <img class="card-img" src="images/premium-suite.svg" alt="Premium Suite with lounge area and bathtub at Royal Haven Hotel">
           <div class="card-body">
             <h3>Premium Suite</h3>
@@ -114,7 +180,7 @@
             <a class="btn btn-dark" href="booking.html">Book Now</a>
           </div>
         </article>
-        <article class="card room-card">
+        <article class="card room-card reveal">
           <img class="card-img" src="images/penthouse.svg" alt="Royal Penthouse with private terrace and skyline view at Royal Haven Hotel">
           <div class="card-body">
             <h3>Royal Penthouse</h3>
@@ -187,7 +253,7 @@
         <p class="section-sub">Every detail at Royal Haven is crafted to give you an experience that is comfortable, memorable and truly world-class.</p>
       </div>
       <div class="cards-grid">
-        <div class="card">
+        <div class="card reveal">
           <div class="card-img">🏆</div>
           <div class="card-body">
             <h3>Award-Winning Service</h3>
@@ -215,12 +281,12 @@
   <!-- TESTIMONIALS -->
   <section class="section testimonials-bg">
     <div class="container">
-      <div class="section-head center">
+      <div class="section-head center reveal">
         <span class="section-label">Guest Reviews</span>
         <h2 class="section-title">What Our Guests Say</h2>
       </div>
       <div class="testimonials-grid">
-        <div class="testimonial">
+        <div class="testimonial reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-text">"Absolutely stunning hotel. The room was immaculate, the staff went above and beyond, and the breakfast was extraordinary. Will definitely return on my next visit."</p>
           <div class="testimonial-author">
@@ -231,7 +297,7 @@
             </div>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-text">"The Royal Penthouse was beyond our expectations. The butler service was impeccable and the terrace view at night is simply magical. Perfect for our anniversary."</p>
           <div class="testimonial-author">
@@ -242,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial reveal">
           <div class="stars">★★★★☆</div>
           <p class="testimonial-text">"Excellent location, very clean rooms and the spa was deeply relaxing. The restaurant serves some of the best food I have had in the city. Highly recommended!"</p>
           <div class="testimonial-author">
