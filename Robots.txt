@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://royal-haven-hotel.netlify.app/sitemap.xml
