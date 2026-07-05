@@ -81,12 +81,12 @@
   <section class="slider-section">
     <div class="container">
       <div class="section-head center reveal">
-        <span class="section-label" style="color:var(--silver);">Explore Our World</span>
+        <span class="section-label slider-label">Explore Our World</span>
         <h2 class="section-title white-text">A Glimpse of Royal Haven</h2>
       </div>
       <div class="slider-wrapper reveal">
         <div class="slider-track">
-          <div class="slide" style="background:linear-gradient(135deg,#2D0A5C,#4A0E8F);">
+          <div class="slide slide-1">
             <div class="slide-overlay"></div>
             <div class="slide-content">
               <p class="slide-label">Accommodation</p>
@@ -94,9 +94,9 @@
               <p>Our crown jewel — a two-bedroom penthouse with private terrace, butler service and panoramic city views.</p>
               <a class="btn btn-silver" href="rooms.html">View Rooms</a>
             </div>
-            <div class="slide-bg" style="right:0;left:auto;font-size:10rem;opacity:0.15;">✨</div>
+            <div class="slide-bg slide-bg-right">✨</div>
           </div>
-          <div class="slide" style="background:linear-gradient(135deg,#1A003A,#2D0A5C);">
+          <div class="slide slide-2">
             <div class="slide-overlay"></div>
             <div class="slide-content">
               <p class="slide-label">Fine Dining</p>
@@ -104,9 +104,9 @@
               <p>Award-winning cuisine blending Indian flavours with contemporary international artistry by Chef Rajan Pillai.</p>
               <a class="btn btn-silver" href="facilities.html">Explore Dining</a>
             </div>
-            <div class="slide-bg" style="right:0;left:auto;font-size:10rem;opacity:0.15;">🍽️</div>
+            <div class="slide-bg slide-bg-right">🍽️</div>
           </div>
-          <div class="slide" style="background:linear-gradient(135deg,#3D0080,#6B2FBE);">
+          <div class="slide slide-3">
             <div class="slide-overlay"></div>
             <div class="slide-content">
               <p class="slide-label">Wellness</p>
@@ -114,9 +114,9 @@
               <p>Rejuvenate your body and mind at our full-service spa with aromatherapy, massages and a temperature-controlled pool.</p>
               <a class="btn btn-silver" href="facilities.html">Discover Spa</a>
             </div>
-            <div class="slide-bg" style="right:0;left:auto;font-size:10rem;opacity:0.15;">🧖</div>
+            <div class="slide-bg slide-bg-right">🧖</div>
           </div>
-          <div class="slide" style="background:linear-gradient(135deg,#0D0020,#2D0A5C);">
+          <div class="slide slide-4">
             <div class="slide-overlay"></div>
             <div class="slide-content">
               <p class="slide-label">Events</p>
@@ -124,19 +124,19 @@
               <p>Host up to 300 guests in our elegant banquet and conference hall, fully equipped with AV and catering services.</p>
               <a class="btn btn-silver" href="facilities.html">Plan an Event</a>
             </div>
-            <div class="slide-bg" style="right:0;left:auto;font-size:10rem;opacity:0.15;">🎪</div>
+            <div class="slide-bg slide-bg-right">🎪</div>
           </div>
         </div>
       </div>
       <div class="slider-controls">
-        <button class="slider-btn" id="sliderPrev">&#8592;</button>
+        <button class="slider-btn" id="sliderPrev" title="Previous slide" aria-label="Previous slide">&#8592;</button>
         <div class="slider-dots">
-          <button class="slider-dot active" data-index="0"></button>
-          <button class="slider-dot" data-index="1"></button>
-          <button class="slider-dot" data-index="2"></button>
-          <button class="slider-dot" data-index="3"></button>
+          <button class="slider-dot active" data-index="0" title="Slide 1" aria-label="Go to slide 1"></button>
+          <button class="slider-dot" data-index="1" title="Slide 2" aria-label="Go to slide 2"></button>
+          <button class="slider-dot" data-index="2" title="Slide 3" aria-label="Go to slide 3"></button>
+          <button class="slider-dot" data-index="3" title="Slide 4" aria-label="Go to slide 4"></button>
         </div>
-        <button class="slider-btn" id="sliderNext">&#8594;</button>
+        <button class="slider-btn" id="sliderNext" title="Next slide" aria-label="Next slide">&#8594;</button>
       </div>
     </div>
   </section>
@@ -376,6 +376,6 @@
 
 
 <!-- Tidio Live Chat & AI -->
-<script src="//code.tidio.co/iykqtmklfo7pcl8dj7mkjxnhz64a8ynp.js" async></script>
+<script src="https://code.tidio.co/iykqtmklfo7pcl8dj7mkjxnhz64a8ynp.js" async></script>
 </body>
 </html>

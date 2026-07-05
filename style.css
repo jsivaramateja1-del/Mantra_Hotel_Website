@@ -93,6 +93,7 @@ h1, h2, h3, h4 {
 /* ---- Header ---- */
 .site-header {
   background: rgba(45,10,92,0.97);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
@@ -393,6 +394,14 @@ h1, h2, h3, h4 {
 .feature-icon { font-size: 2rem; margin-bottom: 10px; }
 .feature-item h4 { color: var(--silver-lt); font-size: 0.95rem; margin-bottom: 4px; }
 .feature-item p { color: var(--silver-dk); font-size: 0.78rem; font-family: Arial, sans-serif; }
+
+/* ---- Slider backgrounds ---- */
+.slider-label { color: var(--silver); }
+.slide-1 { background: linear-gradient(135deg, #2D0A5C, #4A0E8F); }
+.slide-2 { background: linear-gradient(135deg, #1A003A, #2D0A5C); }
+.slide-3 { background: linear-gradient(135deg, #3D0080, #6B2FBE); }
+.slide-4 { background: linear-gradient(135deg, #0D0020, #2D0A5C); }
+.slide-bg-right { right: 0; left: auto; font-size: 10rem; opacity: 0.15; }
 
 /* ---- Slider ---- */
 .slider-section { background: var(--purple-dk); padding: 80px 0; overflow: hidden; }
