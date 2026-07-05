@@ -93,7 +93,6 @@ h1, h2, h3, h4 {
 /* ---- Header ---- */
 .site-header {
   background: rgba(45,10,92,0.97);
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
@@ -275,7 +274,6 @@ h1, h2, h3, h4 {
   padding: 8px 22px;
   border-radius: 30px;
   margin-bottom: 28px;
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   animation: fadeInDown 0.8s ease both;
 }
@@ -472,15 +470,6 @@ h1, h2, h3, h4 {
   border: none;
 }
 .slider-dot.active { background: var(--silver-lt); width: 24px; border-radius: 4px; }
-
-.text-silver { color: var(--silver); }
-
-.slide-bg-1 { background: linear-gradient(135deg, #2D0A5C, #4A0E8F); }
-.slide-bg-2 { background: linear-gradient(135deg, #1A003A, #2D0A5C); }
-.slide-bg-3 { background: linear-gradient(135deg, #3D0080, #6B2FBE); }
-.slide-bg-4 { background: linear-gradient(135deg, #0D0020, #2D0A5C); }
-
-.slide-bg-icon { right: 0; left: auto; font-size: 10rem; opacity: 0.15; }
 
 /* ---- Cards ---- */
 .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
