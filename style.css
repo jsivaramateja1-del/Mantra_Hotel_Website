@@ -275,6 +275,7 @@ h1, h2, h3, h4 {
   padding: 8px 22px;
   border-radius: 30px;
   margin-bottom: 28px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   animation: fadeInDown 0.8s ease both;
 }
