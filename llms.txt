@@ -1,0 +1,11 @@
+# Royal Haven Hotel
+
+> A luxury hotel located in New Delhi offering premium rooms, fine dining, spa and conference facilities.
+
+## Pages
+- [Home](https://royal-haven-hotel.netlify.app/)
+- [About](https://royal-haven-hotel.netlify.app/about.html)
+- [Rooms](https://royal-haven-hotel.netlify.app/rooms.html)
+- [Facilities](https://royal-haven-hotel.netlify.app/facilities.html)
+- [Booking](https://royal-haven-hotel.netlify.app/booking.html)
+- [Contact](https://royal-haven-hotel.netlify.app/contact.html)
