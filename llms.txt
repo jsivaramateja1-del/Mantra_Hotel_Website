@@ -1,11 +1,34 @@
 # Royal Haven Hotel
 
-> A luxury hotel located in New Delhi offering premium rooms, fine dining, spa and conference facilities.
+> A 5-star luxury hotel located in New Delhi, India. Founded in 2005, Royal Haven Hotel offers 85 premium rooms and suites, award-winning fine dining, a full-service spa, swimming pool, conference facilities and complimentary airport transfers.
+
+## About
+Royal Haven Hotel was founded in 2005 by the Kapoor Group of Hospitality. Located at 12 MG Road, City Centre, New Delhi – 110001. Contact: +91-9876543210. Check-in: 2:00 PM. Check-out: 12:00 PM.
 
 ## Pages
 - [Home](https://royal-haven-hotel.netlify.app/)
-- [About](https://royal-haven-hotel.netlify.app/about.html)
-- [Rooms](https://royal-haven-hotel.netlify.app/rooms.html)
+- [About Us](https://royal-haven-hotel.netlify.app/about.html)
+- [Rooms & Suites](https://royal-haven-hotel.netlify.app/rooms.html)
 - [Facilities](https://royal-haven-hotel.netlify.app/facilities.html)
+- [Gallery](https://royal-haven-hotel.netlify.app/gallery.html)
 - [Booking](https://royal-haven-hotel.netlify.app/booking.html)
 - [Contact](https://royal-haven-hotel.netlify.app/contact.html)
+
+## Rooms
+- Deluxe Room — ₹4,999/night — King Bed, City View, Free WiFi
+- Premium Suite — ₹8,499/night — King Bed, Lounge Area, Bathtub
+- Royal Penthouse — ₹16,999/night — 2 Bedrooms, Private Terrace, Butler Service
+
+## Facilities
+- Zaika Restaurant — Award-winning fine dining
+- Luxury Spa & Wellness Centre
+- Temperature-controlled Swimming Pool
+- Grand Conference Hall (300 guest capacity)
+- Fitness Centre
+- 24/7 Room Service
+- Complimentary Airport Transfers
+- Free High-Speed WiFi
+
+## Awards
+- Best Luxury Hotel 2024
+- 12 National & International Hospitality Awards
