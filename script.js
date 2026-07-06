@@ -1,6 +1,6 @@
 // =============================================
 // ROYAL HAVEN HOTEL — Main JavaScript
-// Deep Purple & Silver Theme — Redesigned
+// Midnight Black & Gold — Minimalist Split Screen
 // MANTRA 2026 Summer School Assignment
 // =============================================
 
@@ -33,30 +33,11 @@ function revealOnScroll() {
   const elements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
   elements.forEach(function (el) {
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 80) {
-      el.classList.add('visible');
-    }
+    if (rect.top < window.innerHeight - 80) el.classList.add('visible');
   });
 }
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
-
-// ---- Hero Particles ----
-function createParticles() {
-  const container = document.querySelector('.hero-particles');
-  if (!container) return;
-  for (let i = 0; i < 20; i++) {
-    const p = document.createElement('div');
-    p.classList.add('particle');
-    p.style.left = Math.random() * 100 + '%';
-    p.style.width = p.style.height = (Math.random() * 3 + 1) + 'px';
-    p.style.animationDuration = (Math.random() * 10 + 8) + 's';
-    p.style.animationDelay = (Math.random() * 10) + 's';
-    p.style.opacity = Math.random() * 0.5 + 0.1;
-    container.appendChild(p);
-  }
-}
-createParticles();
 
 // ---- Image Slider ----
 (function () {
@@ -69,15 +50,20 @@ createParticles();
 
   function goTo(index) {
     current = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
     dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
   }
 
-  document.getElementById('sliderPrev') && document.getElementById('sliderPrev').addEventListener('click', function () { goTo(current - 1); resetAuto(); });
-  document.getElementById('sliderNext') && document.getElementById('sliderNext').addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+  const prev = document.getElementById('sliderPrev');
+  const next = document.getElementById('sliderNext');
+  if (prev) prev.addEventListener('click', function () { goTo(current - 1); resetAuto(); });
+  if (next) next.addEventListener('click', function () { goTo(current + 1); resetAuto(); });
   dots.forEach(function (d, i) { d.addEventListener('click', function () { goTo(i); resetAuto(); }); });
 
-  function resetAuto() { clearInterval(autoPlay); autoPlay = setInterval(function () { goTo(current + 1); }, 4500); }
+  function resetAuto() {
+    clearInterval(autoPlay);
+    autoPlay = setInterval(function () { goTo(current + 1); }, 5000);
+  }
   resetAuto();
   goTo(0);
 })();
@@ -95,7 +81,6 @@ if (bookingForm) {
     const room     = document.getElementById('bRoom').value;
     const result   = document.getElementById('bookingResult');
     result.className = 'form-result';
-
     if (!name || !email || !phone || !checkin || !checkout || !room) {
       result.textContent = '⚠ Please fill in all required fields.';
       result.classList.add('error'); return;
@@ -129,7 +114,6 @@ if (contactForm) {
     const message = document.getElementById('cMessage').value.trim();
     const result  = document.getElementById('contactResult');
     result.className = 'form-result';
-
     if (!name || !email || !subject || !message) {
       result.textContent = '⚠ Please fill in all required fields.';
       result.classList.add('error'); return;
@@ -170,11 +154,11 @@ function calculateRoomCost() {
   const tax      = Math.round(subtotal * 0.12);
   const total    = subtotal + tax;
   result.innerHTML =
-    `<strong>Room:</strong> ${roomSelect.options[roomSelect.selectedIndex].text.split('–')[0].trim()}<br>` +
-    `<strong>Nights:</strong> ${nights} &nbsp; <strong>Guests:</strong> ${guests}<br>` +
-    `<strong>Subtotal:</strong> ₹${subtotal.toLocaleString('en-IN')}<br>` +
-    `<strong>GST (12%):</strong> ₹${tax.toLocaleString('en-IN')}<br>` +
-    `<strong style="color:var(--purple);font-size:1.1rem">Total: ₹${total.toLocaleString('en-IN')}</strong>`;
+    '<strong>Room:</strong> ' + roomSelect.options[roomSelect.selectedIndex].text.split('–')[0].trim() + '<br>' +
+    '<strong>Nights:</strong> ' + nights + ' &nbsp; <strong>Guests:</strong> ' + guests + '<br>' +
+    '<strong>Subtotal:</strong> ₹' + subtotal.toLocaleString('en-IN') + '<br>' +
+    '<strong>GST (12%):</strong> ₹' + tax.toLocaleString('en-IN') + '<br>' +
+    '<strong>Total: ₹' + total.toLocaleString('en-IN') + '</strong>';
   result.className = 'form-result success';
 }
 
