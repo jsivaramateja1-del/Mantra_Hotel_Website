@@ -130,6 +130,7 @@ h1,h2,h3,h4 { font-family: 'Georgia', serif; font-weight: 700; line-height: 1.2;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
 }
 
 .hero-left {
@@ -669,24 +670,4 @@ h1,h2,h3,h4 { font-family: 'Georgia', serif; font-weight: 700; line-height: 1.2;
   .form-box { padding: 28px; }
   .section { padding: 64px 0; }
   .calc-box { padding: 28px; }
-}/* Hide or style the scroll indicator */
-.hero-scroll {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  letter-spacing: 3px;
-  color: #999;
-  text-transform: uppercase;
-}
-
-/* Style the hero slide number */
-.hero-number {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #555;
 }
